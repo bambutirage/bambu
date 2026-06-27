@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls \"C:\\\\Users\\\\pierre\\\\Downloads\\\\\" | grep -i \"h2c\\\\|p2s\\\\|a2l\\\\|bambu\")",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\pierre\\\\Downloads\\\\bambu\" | Where-Object { $_.Name -match \"h2c|p2s|a2l|bambu\" -or $_.Extension -match \"png|jpg|jpeg|webp\" } | Select-Object Name)"
+    ]
+  }
+}
